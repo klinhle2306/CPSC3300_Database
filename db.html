@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <title> Record Store Database </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Verdana', sans-serif;
+    }
+
+    .button {
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 10px;
+    }
+
+    p {
+      text-align: center
+    }
+
+    h1 {
+      text-align: center
+    }
+
+    h2 {
+      text-align: center
+    }
+
+    form {
+      text-align: center;
+    }
+
+    .artist {
+      background-color: #FFD1DC;
+    }
+
+    .recordlabel {
+      background-color: #4CAF50;
+    }
+
+    .album {
+      background-color: #88AED0;
+    }
+
+    .genre {
+      background-color: #FF6961;
+    }
+
+    .join {
+      background-color: #CDB7F6;
+    }
+
+    .query {
+      background-color: #924a77;
+    }
+  </style>
+</head>
+
+<body style="background-color:#E8A87C;">
+
+  <div class="content">
+    <h1> The Record Store Database </h1>
+    <h2> Quick Information </h2>
+
+    <form action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/artist.php" method="post">
+      <button class="button artist">Artists</button>
+    </form>
+
+    <form action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/recordlabel.php" method="post">
+      <button class="button recordlabel">Record Label</button>
+    </form>
+
+    <form action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/album.php" method="post">
+      <button class="button album">Album</button>
+    </form>
+
+    <form action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/genre.php" method="post">
+      <button class="button genre">Genre</button>
+    </form>
+
+    <!-- Join Query -->
+    <form action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/join.php" method="post">
+      <button class="button join">Artists Who Have Produced An Album</button>
+    </form>
+
+    <form action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/db2.php" method="post">
+      <button class="button query">Rating and Total Album in Each Group That Have More Than 5 Albums</button>
+    </form>
+    </br>
+
+    <h2> Data List </h2>
+    <p> Provide a table name, key attribute and key value for search </p>
+
+    <form name="f1" action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/db1.php" method="post">
+      Table: <input type="text" name="table" /> <br />
+      Key: <input type="text" name="pk" /> <br />
+      Value: <input type="text" name="val" /> <br />
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit request" />
+    </form>
+
+    <h2> Table Description </h2>
+    <p> Artist, RecordLabel, Album, Genre, PartOf </p>
+    <form name="f2" action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/tablesAtr.php" method="post">
+      Table: <input type="text" name="table" /> <br />
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit request" />
+    </form>
+
+    <h2> Data Deletion </h2>
+    <p>Enter the artist ID that you want to delete from the Artist table! </p>
+    <form name="f3" action="http://css1.seattleu.edu/~lelinh/PDA6/dbtest/db3.php" method="post">
+      Artist ID: <input type="text" name="aID" /> <br />
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit request" />
+    </form>
+
+  </div>
+</body>
+
+</html>

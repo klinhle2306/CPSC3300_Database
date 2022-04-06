@@ -1,0 +1,12 @@
+
+body {background-color: #e7aa82}
+a:hover {color: #FFFFFF}
+a {color:#6b6bdd}
+.image{color:#6b6bdd; vertical-align:bottom}
+.bold {font-weight:bold}
+.underline {text-decoration:underline}
+.italic {font-style:italic}
+p {color:#FFFFFF}
+h1{color:#FFFFFF}
+h2{color:#FFFFFF}
+.hidden {color:#ca6a6a; visibility:hidden}
